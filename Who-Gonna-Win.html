@@ -75,6 +75,58 @@
         font-size: 14px;
         color: #888;
       }
+
+      /* Responsive Design for Small Devices (Phones) */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 28px; /* Smaller header font size */
+        }
+
+        button {
+          padding: 10px 20px; /* Smaller button padding */
+          font-size: 16px; /* Smaller button font size */
+        }
+
+        .result, .moves, .score {
+          font-size: 18px; /* Adjust text size for smaller screens */
+        }
+
+        footer {
+          font-size: 12px; /* Smaller footer text */
+        }
+      }
+
+      /* Responsive Design for Medium Devices (Tablets) */
+      @media (min-width: 601px) and (max-width: 1024px) {
+        h1 {
+          font-size: 32px; /* Slightly smaller header font size */
+        }
+
+        button {
+          padding: 12px 25px; /* Adjust button padding */
+          font-size: 17px; /* Adjust button font size */
+        }
+
+        .result, .moves, .score {
+          font-size: 20px; /* Adjust text size for tablets */
+        }
+      }
+
+      /* Responsive Design for Large Devices (Desktops) */
+      @media (min-width: 1025px) {
+        h1 {
+          font-size: 36px; /* Default header font size */
+        }
+
+        button {
+          padding: 15px 30px; /* Default button padding */
+          font-size: 18px; /* Default button font size */
+        }
+
+        .result, .moves, .score {
+          font-size: 22px; /* Slightly larger text for desktops */
+        }
+      }
     </style>
   </head>
   <body>
