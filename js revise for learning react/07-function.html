@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function</title>
+</head>
+<body>
+  <script>
+    function temprature(deree, unit) {
+      if(unit === 'C') {
+        console.log((deree*9/5)+32+'F');
+      }else if(unit === 'F') {
+        console.log((deree*5/9)+32+'C');
+      }
+    }
+    temprature(25, 'C');
+    temprature(86, 'F');
+
+    function convertLength(length, from, to){
+      if(from !== 'km'&& from !== 'miles' && from !== 'ft'){
+        return `invalide unit ${from}`
+      }else if(to !== 'km'&& to !== 'miles' && to !== 'ft'){
+        return `invalide unit ${to}`
+      }
+
+      if(from === 'miles' && to === 'km') {
+        return `${length*1.6} ${to}`;
+      }else if(from === 'miles' && to === 'ft') {
+        return `${length*5680} ${to}`;
+      }else if(from === 'km' && to === 'ft') {
+        return `${length*3281} ${to}`;
+      }else if(from === 'km' && to === 'miles') {
+        return `${length*3281} ${to}`;
+      }else if(from === to) {
+        return `${length} ${to}`;
+      }
+    }
+
+    console.log(convertLength(50, 'km', 'miles'));
+    </script>
+</body>
+</html>

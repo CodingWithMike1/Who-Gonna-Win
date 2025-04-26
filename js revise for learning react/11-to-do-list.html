@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo list</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <input class="input" type="text" placeholder="add your schedule"> <button class="btn">Add</button>
+  <div class="container"></div>
+  <script>
+    const myArray = [];
+    const newParagraph = document.createElement('p');
+    const inputValue = document.querySelector('.input');
+    const btn = document.querySelector('.btn');
+    const container = document.querySelector('.container');
+    btn.addEventListener('click', () => {
+      myArray.push(inputValue.value);
+      
+      /* for (let i = 0; i < myArray.length; i++) {
+        container.innerHTML += `<p>${myArray[i]}</p>`;
+      } */
+      inputValue.value = '';
+    })
+  </script>
+</body>
+</html>

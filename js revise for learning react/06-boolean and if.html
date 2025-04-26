@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>coin flip</title>
+</head>
+<body>
+  <button onclick="
+    allComputerMove(Head);
+    //result = (computerMove === 'Head') ? 'Win' : 'Loss'; 
+    
+  ">Head</button>
+  <button onclick="
+    allComputerMove(Tail);
+    //result = (computerMove === 'Tail') ? 'Win' : 'Loss';
+    
+  ">Tail</button>
+   <script>
+    let computerMove = '';
+
+    function allComputerMove(parameter1) {
+    let randomMove = Math.random();
+    let result = '';
+    computerMove = (randomMove < 0.5) ? 'Head' : 'Tail';
+    result = (computerMove === parameter1) ? 'Win' : 'Loss';
+    //return computerMove
+    alert(`You choose ${parameter1} computer choose You ${result}`);
+    console.log(parameter1);
+    }
+
+   </script>
+</body>
+</html>

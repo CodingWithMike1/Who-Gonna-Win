@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    /* 
+    let quantity = {
+      name: 'socks',
+      price: '100'
+    }
+
+    console.log(quantity);
+    quantity.name = 'cotton socks';
+    console.log(quantity);
+    quantity.prototype = '20 piece';
+    console.log(quantity);
+    delete quantity.prototype;
+    console.log(quantity) */
+/* 
+    let cart = {};
+    
+    cart.grade = 'th';
+    cart.grdade = 'thhh'; */
+    console.log('cart'.length);
+    console.log('hEllo'.toUpperCase());
+    const cart = {
+      message: 'hello'
+    }
+    const cart1 = cart;
+    cart1.message = 'hola';
+    console.log(cart)
+
+    const product = {
+      message : 'hola comostas',
+      price: 500
+    }
+
+    const { message, price } = product;
+    console.log(message, price);
+
+    const product1 = {
+      message,
+      price() {
+        console.log('hello');
+      }
+    }
+
+    console.log(product1.message)
+    product1.price();
+  </script>
+</body>
+</html>
